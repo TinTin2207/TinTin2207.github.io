@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/nav.css">
+        <link rel="stylesheet" href="../static/css/transition.css">
+        <title>The Zen's Action</title>
+    </head>
+    <body>
+        <div class="transition">
+            <div class="cover cover1"></div>
+            <div class="cover cover2"></div>
+            <div class="cover cover3"></div>
+            <div class="cover cover4"></div>
+        </div>
+        <nav>
+            <div class="logo edit-margin">
+                <a class="remove-line" href="{{ url_for('main') }}">
+                    <img class="logo-img" src="static/img/logo.png" alt="thezensaction" width="80px" height="80px">
+                    <span class="logo">The Zen's Action</span>
+                </a>
+            </div>
+            <ul id="links" class="nav-links">
+                <li><a href="{{ url_for('main') }}" id="home"><strong>Home</strong></a></li>
+                <li><a href="{{ url_for('about') }}" id="about"><strong>About us</strong></a></li>
+                <li><a href="{{ url_for('contact') }}" id="contact"><strong>Contact</strong></a></li>
+                <li><a href="{{ url_for('gallery') }}" id="gallery"><strong>Gallery</strong></a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <script src="../static/js/burger.js"></script>
+            <script src="../static/js/transition.js"></script>
+        </nav>
+    </body>
+</html>

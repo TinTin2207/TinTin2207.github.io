@@ -1,12 +1,4 @@
-const links = document.getElementById('links')
-const transition = document.querySelector('.transition');
-
-links.addEventListener('click', (e) => {
-    e.preventDefault()
+window.onload = function() {
+    const transition = document.querySelector('.transition');
     transition.classList.add("slide");
-        
-    setTimeout(() =>  {
-        const path = e.path[1].attributes[0].nodeValue
-        window.location = path
-    }, 900)
-})
+}
